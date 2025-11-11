@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#generating loop for displaying Best School 10 times
 for i in {1..10}
 do
  echo "Best School"
