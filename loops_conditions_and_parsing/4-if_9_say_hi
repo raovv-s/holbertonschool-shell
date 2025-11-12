@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # best school loop with while
 c=1
-while [ $c -lq 10 ]
+while [ $c -le 10 ]
 do
   echo "Best School"
   ((c++))
