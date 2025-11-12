@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 #djaskdak
-#!/usr/bin/env bash
-#djaskdak
 s=1 
 while [ $s -le 100 ];
 do 
