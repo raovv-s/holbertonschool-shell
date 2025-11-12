@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+c=0
+until [ $c -gt 10 ]
+do
+  echo "Best School"
+  ((c++))
+done
