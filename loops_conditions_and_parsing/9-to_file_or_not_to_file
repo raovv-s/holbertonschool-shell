@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#djsladk
 school="school.txt"
 
 if [ -e "$school" ]; then
