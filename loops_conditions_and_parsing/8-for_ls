@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#dskad
+files=($(ls))
+for f in "${files[@]}"; do
+  echo "${f#*-}"
+done
