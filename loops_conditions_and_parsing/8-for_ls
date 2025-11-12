@@ -1,6 +1,9 @@
-#!/usr/bin/env bash
-#dskad
-files=$(ls)
-for f in "${files[@]}"; do
-  echo "${f#*-}"
+#!/bin/bash
+
+for item in *; do
+    if [[ "$item" == *-* ]]; then 
+       echo "${item#*-}"  
+    else 
+       echo "$item"    
+    fi
 done
