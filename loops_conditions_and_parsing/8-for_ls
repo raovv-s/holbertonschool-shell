@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#djsladkl
 for item in *; do
     if [[ "$item" == *-* ]]; then 
        echo "${item#*-}"  
