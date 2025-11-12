@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+c=10
+while [ $c -gt 10 ]
+do
+  echo "Best School"
+  ((c--))
+done
