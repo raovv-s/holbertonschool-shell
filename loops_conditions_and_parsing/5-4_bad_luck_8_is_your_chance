@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#dskad
+c=1
+while [ $c -le 10 ]
+do
+   ((c++))
+   if [ $c -eq 9 ]; then
+   echo "good luck"
+   elif [ $c -eq 5 ]; then
+   echo "bad luck"
+   else
+   echo "Best School"
+   fi
+done
