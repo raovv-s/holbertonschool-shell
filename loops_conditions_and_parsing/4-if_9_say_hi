@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # best school loop with while
 c=1
-while [ $c -gt 10 ]
+while [ $c -lt 10 ]
 do
   echo "Best School"
-  ((c--))
+  ((c++))
   if [ $c -eq 9 ]; then
      echo "Hi"
   fi
