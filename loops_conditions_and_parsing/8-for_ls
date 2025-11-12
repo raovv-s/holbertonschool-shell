@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #djsladkl
 for item in *; do
     if [[ "$item" == *-* ]]; then 
