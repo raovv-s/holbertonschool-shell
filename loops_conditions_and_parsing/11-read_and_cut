@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#dsadsldkal
+while IFS=":" read -r user pass uid gid comment home shell
+do
+  echo "$user:$uid:$home"
+done 
