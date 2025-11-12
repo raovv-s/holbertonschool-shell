@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #djsaldka
 c=1
-while [ $c -lt 20 ] 
+while [ $c -le 20 ] 
 do 
  echo "$c"
  ((c++))
