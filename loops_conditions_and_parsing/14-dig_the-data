@@ -1,10 +1,3 @@
 #!/usr/bin/env bash
-#djaosdadk
-LOG_FILE="apache-access.log"
-
-awk '{count[$1" "$9]++} END {
-    for (i in count) {
-        split(i, a, " ")
-        print count[i], a[1], a[2]
-    }
-}' "$LOG_FILE" | sort -nr
+#djaosdad
+awk -F" " '{print $1, $9}' apache-access.log | sort | uniq -c | sort -nr
