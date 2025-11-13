@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#dsadsldkal
-while IFS=":" read -r user pass uid gid comment home shell
+#using IFS in loop  via read
+while IFS=: read -r user _  uid _  _  home _ ;
 do
   echo "$user:$uid:$home"
-done 
+done < /etc/passwd
