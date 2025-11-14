@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+FLAG="/tmp/stop_infinity.flag"
+
+# Убираем старый флаг
+rm -f "$FLAG"
+
+trap 'rm -f "$FLAG"; exit' EXIT
+
+while true; do
+    if [[ -f "$FLAG" ]]; then
+        echo "Terminated"
+        break
+    fi
+    echo "To infinity and beyond"
+    sleep 2
+done
