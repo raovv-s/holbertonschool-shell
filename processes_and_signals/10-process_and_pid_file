@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #process and pid 
-
+touch /var/run/myscript.pid
 pid="/var/run/myscript.pid"
 echo $$ > "$pid"
 trap 'echo "I hate the kill comand"' SIGTERM
