@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
-#dsjaddask
-pid="/var/run/myscript.pid"
-echo $$ > "$pid"�гналов
-trap 'echo "I hate the kill command"; rm -f "$pid"; exit' SIGTERM
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'rm -f "$pid"; exit' SIGQUIT�кл
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
+#process and pid
+pid="/var/run/myscript.pid" 
+echo $$ > "$pid" 
+trap 'echo "I hate the kill command" ' SIGTERM
+trap 'echo "Y U no love me?!" ' SIGINT
+trap 'rm -f "$pid"; exit' SIGQUIT
+
+while true; 
+do 
+  echo "To infinity and beyond"
+  sleep 2 
 done
+
