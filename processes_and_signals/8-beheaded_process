@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#STRKILL
+pkill -9 -f "7-highlander"
