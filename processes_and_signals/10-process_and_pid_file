@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#process and pid
+#dsjaddask
 pid="/var/run/myscript.pid"
 echo $$ > "$pid"�гналов
 trap 'echo "I hate the kill command"; rm -f "$pid"; exit' SIGTERM
