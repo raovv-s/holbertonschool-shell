@@ -1,17 +1,5 @@
 #!/usr/bin/env bash
-# creating  temporary file for signal interruption
-FLAG="/tmp/stop_infinity.flag"
-
-# Убираем старый флаг
-rm -f "$FLAG"
-
-trap 'rm -f "$FLAG"; exit' EXIT
-
-while true; do
-    if [[ -f "$FLAG" ]]; then
-        echo "Terminated"
-        break
-    fi
-    echo "To infinity and beyond"
-    sleep 2
-done
+# using pkill
+pkill -f './4-to_infinity_and_beyond'
+sleep 1
+pkill -9 -f './4-to_infinity_and_beyond'
