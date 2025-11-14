@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-#bash pid
-ps aux | grep "bash"
+ps aux > 1.txt | awk '{ print $2 $11 }' 1.txt
