@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# creating  temporary file for signal interruption
 FLAG="/tmp/stop_infinity.flag"
 
 # Убираем старый флаг
