@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 # using pkill
-pkill -f 4-to_infinity_and_beyond
-sleep 1
-pkill -9 -f 4-to_infinity_and_beyond
+for pid_path in /proc/[0-9]*; do
+    if [[ -f "$pid_path/comm" ]]; then
+        pname=$(<"$pid_path/comm")
+        if [[ "$pname" == "4-to_infinity_and_beyond" ]]; then
+            pkill -f 4-to_infinity_and_beyond
+            break
+        fi
+    fi
+done
